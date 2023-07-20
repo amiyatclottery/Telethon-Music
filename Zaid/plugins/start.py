@@ -26,15 +26,14 @@ async def start(event):
              Config.START_IMG,
              caption=PM_START_TEXT.format(event.sender.first_name), buttons=[
         [Button.url("➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐜𝐡𝐚𝐭", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("📲 𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫", f"http://www.9987up.cc/#/register?r_code=WGxNp30387")],
-        [Button.url("📁 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", f"https://t.me/aliaxtc"), Button.url("🌐 𝐖𝐞𝐛𝐬𝐢𝐭𝐞", f"https://tclotteryvip.com")],
+        [Button.url("📲 𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫", f"http://www.9987up.cc/#/register?r_code=258415275")],
+        [Button.url("📁 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", f"https://t.me/+4zYQwgGudPNmYWRl"), Button.url("👤 𝐂𝐨𝐧𝐭𝐚𝐜𝐭", f"https://t.me/amiyatclottery12")],
         [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", data="help")]])
        return
 
     if event.is_group:
        await event.reply("**Hey Im online ✅**")
        return
-
 
 
 @Zaid.on(events.callbackquery.CallbackQuery(data="start"))
@@ -44,26 +43,28 @@ async def _(event):
     if event.is_private:
        await event.edit(PM_START_TEXT.format(event.sender.first_name), buttons=[
         [Button.url("➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐜𝐡𝐚𝐭", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("📲 𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫", f"http://www.9987up.cc/#/register?r_code=WGxNp30387")],
-        [Button.url("📁 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", f"https://t.me/aliaxtc"), Button.url("🌐 𝐖𝐞𝐛𝐬𝐢𝐭𝐞", f"https://tclotteryvip.com")],
+        [Button.url("📲 𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫", f"http://www.9987up.cc/#/register?r_code=258415275")],
+        [Button.url("📁 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", f"https://t.me/+4zYQwgGudPNmYWRl"), Button.url("👤 𝐂𝐨𝐧𝐭𝐚𝐜𝐭", f"https://t.me/amiyatclottery12")],
         [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", data="help")]])
        return
-
 
 @Zaid.on(events.NewMessage(pattern="^[?!/]register$"))
 async def start(event):
      if event.is_group:
-       await event.reply("**https://www.9987up.cc/#/register?r_code=WGxNp30387 📲**")
+       await event.reply("**Register now!**",buttons=[
+        [Button.url("Register Here 🤍", f"http://www.9987up.cc/#/register?r_code=258415275")]])
        return
 
 @Zaid.on(events.NewMessage(pattern="^[?!/]money$"))
 async def start(event):
      if event.is_group:
-       await event.reply("**https://tclotteryvip.com 🌐**")
+       await event.reply("**I know you want to earn money, Come and join**",buttons=[
+        [Button.url("Check it out", f"https://t.me/+4zYQwgGudPNmYWRl")]])
        return
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]channel$"))
+@Zaid.on(events.NewMessage(pattern="^[?!/]contact$"))
 async def start(event):
      if event.is_group:
-       await event.reply("**https://t.me/aliaxtc ✅**")
+       await event.reply("**Contact Us Now**",buttons=[
+        [Button.url("Hello 📞", f"https://t.me/amiyatclottery12")]])
        return
